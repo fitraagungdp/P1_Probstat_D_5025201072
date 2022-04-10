@@ -65,4 +65,7 @@ probChi
 rChi <- rchisq(N, v)
 rChi
 
-hist(rChi)
+probrChi <- pchisq(rChi,v)
+probrChi
+
+hist(probrChi, breaks = 50)
